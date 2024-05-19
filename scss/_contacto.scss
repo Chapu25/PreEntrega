@@ -1,0 +1,125 @@
+.contenedorPadre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+/* mapa */
+.maps{
+    text-align: center;
+    iframe{
+        height: 600px;
+        box-shadow: 7px 6px 10px rgb(22, 22, 120);
+    }
+}
+
+input, label{
+    font-size: 1.7rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* formulario  */
+
+input{
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+label{
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 3px 0px ;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    padding: 5px 0px;
+    border: 2px solid black;
+}
+
+
+/* contenedor del formulario */
+
+.contenedor_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0rem;
+    h2 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+}
+
+form{
+    background-color: rgba(250, 235, 215, 0.6);
+    border: 2px solid black;
+    box-shadow: 7px 6px 10px rgb(22, 22, 120);
+    padding: 4rem 0rem;
+    width: 600px;
+    border-radius: 2rem;
+}
+.contenedor_label_input{
+    padding: 1.5rem 0rem;
+    margin: 0rem 2rem;
+}
+
+
+/* contenedor boton */
+
+.contenedor_boton {
+    display: flex;
+    justify-content: center;
+    button{
+        border-radius: 1rem;
+        padding: 1rem 3rem ;
+        font-size: 2rem;
+        border: 2px solid black;
+        box-shadow: 5px 5px 5px black;
+        color: rgb(255, 255, 255);
+        background-color: rgb(22, 22, 120);
+        &:hover{
+            cursor: pointer;
+            background-color: white;
+            color: rgb(22, 22, 120);
+        }
+    }
+}
+
+
+/* tablet */
+
+@media screen  and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .maps iframe{
+        height: 400px;
+        width: 100%;
+        box-shadow: 7px 6px 10px rgb(22, 22, 120);
+    }
+
+    form{
+        background-color: rgba(250, 235, 215, 0.6);
+        border: 2px solid black;
+        box-shadow: 7px 6px 10px rgb(22, 22, 120);
+        padding: 4rem 0rem;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 2rem;
+    }
+}
