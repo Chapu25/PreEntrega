@@ -5,47 +5,36 @@
     text-decoration: none;
     font-size: 62.5%;
 }
-
+$font-size:(
+    "medio": 1.6rem,
+    "bold": 2rem,
+);
 a{
-    color: rgb(255, 255, 255);
-    font-size: 1.6rem;
+    font-size: map-get($font-size , "medio" );
+    color: white;
     text-decoration: none;
 }
-h1{
-    font-size: 2.5rem;
-}
-h2{
-    font-size: 2.3rem;
-}
-h3{
-    font-size: 2rem;
-}
 span{
-    font-size: 1.8rem;
+    font-size: map-get($font-size , "bold" );
 }
-
-
-
 body{
     background-color: rgba(128, 128, 128, 0.500);
-
-    @import "navbar";
-    
-    
-
-    @import "homepage";
-
-    @import "locales";
-    
-    @import "servicios";
-    
-    @import "contacto";
-    
-    @import "historia";
-    
-    
-
-    @import "footer";
 }
+
+
+
+@import "navbar";
+
+@import "homepage";
+
+@import "locales";
+
+@import "servicios";
+
+@import "contacto";
+
+@import "historia";
+
+@import "footer";
 
 

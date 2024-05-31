@@ -56,13 +56,6 @@ body{
     justify-content: space-between;
     width: 100%;
 }
-/* .caca{
-    background-color: rgb(88, 175, 146);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-} */
 .logo img{
     width: 15rem;
 }
@@ -92,9 +85,6 @@ body{
 /* fondo del shopping */
 
 .alto_imagen{
-    /* width: 91.5%;
-    height: 88vh; */
-
     background-color: rgb(22, 22, 120);
     border-radius: 2rem;
     box-shadow: 10px 10px 10px black;
@@ -438,11 +428,6 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 200px;
     gap: 3rem;
-    
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
 }
 .contenedor_locales img{
     background-color: rgba(255, 255, 255, 0.704);

@@ -1,3 +1,10 @@
+@import "colores";
+@import "media-screen";
+
+
+
+
+
 .contenedorPadre{
     display: flex;
     justify-content: center;
@@ -10,7 +17,12 @@
     text-align: center;
     iframe{
         height: 600px;
-        box-shadow: 7px 6px 10px rgb(22, 22, 120);
+        box-shadow: 7px 6px 10px $azul;
+        @include mobile {
+            height: 400px;
+            width: 100%;
+            box-shadow: 7px 6px 10px $azul;
+        }
     }
 }
 
@@ -28,10 +40,10 @@ input{
     padding: 2px 5px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
-    border: 2px solid black;
+    border: 2px solid $negro;
 }
 label{
-    color: rgb(0, 0, 0);
+    color: $negro;
     display: block;
     margin: 3px 0px ;
 }
@@ -43,7 +55,7 @@ textarea{
     resize: none;
     width: 100%;
     padding: 5px 0px;
-    border: 2px solid black;
+    border: 2px solid $negro;
 }
 
 
@@ -55,19 +67,24 @@ textarea{
     justify-content: center;
     align-items: center;
     padding: 8rem 0rem;
-    h2 {
+    h1 {
         text-align: center;
-        color: rgb(0, 0, 0);
+        color: $negro;
     }
 }
 
 form{
     background-color: rgba(250, 235, 215, 0.6);
-    border: 2px solid black;
-    box-shadow: 7px 6px 10px rgb(22, 22, 120);
+    border: 2px solid $negro;
+    box-shadow: 7px 6px 10px $azul;
     padding: 4rem 0rem;
     width: 600px;
     border-radius: 2rem;
+    @include mobile {
+        padding: 4rem 0rem;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 .contenedor_label_input{
     padding: 1.5rem 0rem;
@@ -84,42 +101,14 @@ form{
         border-radius: 1rem;
         padding: 1rem 3rem ;
         font-size: 2rem;
-        border: 2px solid black;
-        box-shadow: 5px 5px 5px black;
+        border: 2px solid $negro;
+        box-shadow: 5px 5px 5px $negro;
         color: rgb(255, 255, 255);
-        background-color: rgb(22, 22, 120);
+        background-color: $azul;
         &:hover{
             cursor: pointer;
-            background-color: white;
-            color: rgb(22, 22, 120);
+            background-color: $blanco;
+            color: $azul;
         }
-    }
-}
-
-
-/* tablet */
-
-@media screen  and (min-width: 768px) and (max-width: 1023px){
-
-}
-
-
-/* mobile */
-@media screen and (min-width: 320px) and (max-width: 767px){
-
-    .maps iframe{
-        height: 400px;
-        width: 100%;
-        box-shadow: 7px 6px 10px rgb(22, 22, 120);
-    }
-
-    form{
-        background-color: rgba(250, 235, 215, 0.6);
-        border: 2px solid black;
-        box-shadow: 7px 6px 10px rgb(22, 22, 120);
-        padding: 4rem 0rem;
-        width: 90%;
-        margin: 0 auto;
-        border-radius: 2rem;
     }
 }

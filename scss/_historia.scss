@@ -1,3 +1,7 @@
+@import "colores";
+@import "media-screen";
+
+
 .contenedor_padre_historia{
     display: flex;
     flex-direction: column;
@@ -17,43 +21,19 @@
     align-items: center;
     text-align: start;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid $negro;
     padding: 1rem;
     border-radius: 1rem;
     gap: 5rem;
     font-size: 3.5rem;
-    box-shadow: 5px 4px 10px rgb(22, 22, 120);
+    box-shadow: 5px 4px 10px $azul;
     background-color: rgba(250, 235, 215, 0.6);
-}
-
-
-/* tablet */
-
-@media screen  and (min-width: 768px) and (max-width: 1023px){
-    .historia_breve{
-        display: flex;
-        align-items: center;
-        text-align: start;
-        justify-content: center;
-        border: 2px solid black;
-        padding: 1rem;
-        border-radius: 1rem;
-        gap: 5rem;
-        font-size: 3.5rem;
-        box-shadow: 5px 4px 10px rgb(22, 22, 120);
-        background-color: rgba(250, 235, 215, 0.6);
-    }
-}
-
-
-/* mobile */
-@media screen and (min-width: 320px) and (max-width: 767px){
-    .historia_breve{
+    
+    @include mobile {
         display: flex;
         align-items: center;
         text-align: start;
         justify-content: center;
         flex-direction: column;
-        
     }
 }
